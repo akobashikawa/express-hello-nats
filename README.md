@@ -1,5 +1,7 @@
 # Hello NATS
 
+Modelo de aplicación usando Express, SocketIO, NATS.
+
 ## Run NATS server
 
 ```sh
