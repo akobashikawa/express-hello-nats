@@ -5,7 +5,9 @@ class Controller {
     }
     
     async hello(req, res) {
-        res.send(this.service.hello());
+        const name = req.query.name;
+        const message = this.service.hello(name);
+        res.send(message);
     }
 }
 

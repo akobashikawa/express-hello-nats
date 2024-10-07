@@ -1,6 +1,8 @@
 class Service {
-    hello() {
-        return 'Hello';
+    hello(name = 'World') {
+        const message = `Hello ${name}!`;
+        // nats.publish('hello.done', { message })
+        return message;
     }
 }
 
