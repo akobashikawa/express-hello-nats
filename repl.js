@@ -1,6 +1,9 @@
 const repl = require('repl');
+
+const nats = require('./nats-client');
+
 const Service = require('./service');
-const service = new Service();
+const service = new Service({ nats });
 
 async function executeQuery(query) {
     try {
